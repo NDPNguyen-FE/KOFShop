@@ -50,13 +50,11 @@ const OrderDetails = ({ order }) => {
   const orderItems = order && order.orderItems;
 
   useEffect(() => {
-    function dosomething() {
-      console.log(someProp);
-    }
     return () => {
       dispatch(setOrderDetails({}));
     };
-  }, [someProp]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <TableContainer>
