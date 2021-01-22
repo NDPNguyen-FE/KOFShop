@@ -28,12 +28,14 @@ const Signup = (props) => {
       reset();
       history.push("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   useEffect(() => {
     if (Array.isArray(userErr) && userErr.length > 0) {
       setErrors(userErr);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userErr]);
 
   const reset = () => {
