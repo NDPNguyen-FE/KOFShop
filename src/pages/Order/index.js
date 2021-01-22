@@ -16,6 +16,7 @@ const Order = () => {
 
   useEffect(() => {
     dispatch(getOrderDetailsStart(orderID));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

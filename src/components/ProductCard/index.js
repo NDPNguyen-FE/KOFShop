@@ -27,6 +27,7 @@ const ProductCard = () => {
     return () => {
       dispatch(setProduct({}));
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleAddToCart = (product) => {

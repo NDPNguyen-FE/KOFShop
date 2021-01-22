@@ -21,6 +21,7 @@ const ProductResults = () => {
 
   useEffect(() => {
     dispatch(fetchProductsStart({ filterType }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterType]);
 
   const handleFilter = (e) => {
