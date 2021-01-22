@@ -39,7 +39,7 @@ const formatText = (columnName, columnValue) => {
     case "productPrice":
       return `${columnValue} VND`;
     case "productThumbnail":
-      return <img src={columnValue} width={250} />;
+      return <img src={columnValue} width={250} alt={columnValue} />;
     default:
       return columnValue;
   }

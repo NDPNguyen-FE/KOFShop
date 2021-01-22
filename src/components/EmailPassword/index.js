@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import {
   resetPasswordStart,
   resetUserState,
@@ -8,7 +8,7 @@ import {
 import "./styles.scss";
 
 import AuthWrapper from "./../AuthWrapper";
-import FormInput from "../forms/FormInput";
+import FormInput from "./../forms/FormInput";
 import Button from "./../forms/Button";
 
 const mapState = ({ user }) => ({
@@ -28,6 +28,7 @@ const EmailPassword = (props) => {
       dispatch(resetUserState());
       history.push("/login");
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resetPasswordSuccess]);
 
   useEffect(() => {
@@ -40,6 +41,7 @@ const EmailPassword = (props) => {
     e.preventDefault();
     dispatch(resetPasswordStart({ email }));
   };
+
   const configAuthWrapper = {
     headline: "Email Password",
   };
@@ -60,12 +62,18 @@ const EmailPassword = (props) => {
             type="email"
             name="email"
             value={email}
-            placeholder="Your email"
+            placeholder="Email"
             handleChange={(e) => setEmail(e.target.value)}
           />
 
           <Button type="submit">Email Password</Button>
         </form>
+
+        <div className="links">
+          <Link to="/login">LogIn</Link>
+          {` | `}
+          <Link to="/registration">Register</Link>
+        </div>
       </div>
     </AuthWrapper>
   );

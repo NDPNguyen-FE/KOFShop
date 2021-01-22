@@ -13,7 +13,7 @@ const mapState = (state) => ({
   product: state.productsData.product,
 });
 
-const ProductCard = ({}) => {
+const ProductCard = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const { productID } = useParams();
@@ -42,7 +42,7 @@ const ProductCard = ({}) => {
   return (
     <div className="productCard">
       <div className="hero">
-        <img src={productThumbnail} />
+        <img src={productThumbnail} alt={productThumbnail} />
       </div>
       <div className="productDetails">
         <ul>

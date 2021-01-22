@@ -11,7 +11,7 @@ const mapState = ({ productsData }) => ({
   products: productsData.products,
 });
 
-const ProductResults = ({}) => {
+const ProductResults = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const { filterType } = useParams();
