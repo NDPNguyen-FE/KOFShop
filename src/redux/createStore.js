@@ -10,9 +10,9 @@ import rootSaga from "./rootSaga";
 const sagaMiddleware = createSagaMiddle();
 export const middlewares = [thunk, sagaMiddleware, logger];
 
-const store = createStore(rootReducer, applyMiddleware(...middlewares));
+export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 sagaMiddleware.run(rootSaga);
 
-const persistor = persistStore(store);
+export const persistor = persistStore(store);
 
-export default { store, persistor };
+export { store, persistor };
