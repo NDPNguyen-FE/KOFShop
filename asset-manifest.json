@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/deploy-github/static/css/main.b6af0517.chunk.css",
+    "main.js": "/deploy-github/static/js/main.c9edf9b8.chunk.js",
+    "main.js.map": "/deploy-github/static/js/main.c9edf9b8.chunk.js.map",
+    "runtime-main.js": "/deploy-github/static/js/runtime-main.35ae9aab.js",
+    "runtime-main.js.map": "/deploy-github/static/js/runtime-main.35ae9aab.js.map",
+    "static/js/2.1d003e10.chunk.js": "/deploy-github/static/js/2.1d003e10.chunk.js",
+    "static/js/2.1d003e10.chunk.js.map": "/deploy-github/static/js/2.1d003e10.chunk.js.map",
+    "index.html": "/deploy-github/index.html",
+    "static/css/main.b6af0517.chunk.css.map": "/deploy-github/static/css/main.b6af0517.chunk.css.map",
+    "static/js/2.1d003e10.chunk.js.LICENSE.txt": "/deploy-github/static/js/2.1d003e10.chunk.js.LICENSE.txt",
+    "static/media/shopMens.fcf2fa24.jpg": "/deploy-github/static/media/shopMens.fcf2fa24.jpg",
+    "static/media/shopWomens.81fa5624.jpg": "/deploy-github/static/media/shopWomens.81fa5624.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35ae9aab.js",
+    "static/js/2.1d003e10.chunk.js",
+    "static/css/main.b6af0517.chunk.css",
+    "static/js/main.c9edf9b8.chunk.js"
+  ]
+}
