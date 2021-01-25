@@ -2,6 +2,7 @@
   "name": "react-e",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://NDPNguyen-FE.github.io/KOFShop/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@stripe/react-stripe-js": "^1.2.0",
@@ -12,6 +13,7 @@
     "axios": "^0.21.1",
     "ckeditor4-react": "^1.3.0",
     "firebase": "^8.2.2",
+    "gh-pages": "^3.1.0",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
@@ -32,7 +34,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [

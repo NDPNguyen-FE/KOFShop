@@ -14,7 +14,6 @@ const useAuth = (props) => {
     if (!currentUser) {
       history.push("/login");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   return currentUser;

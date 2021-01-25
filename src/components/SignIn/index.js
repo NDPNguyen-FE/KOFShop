@@ -27,7 +27,6 @@ const SignIn = (props) => {
       resetForm();
       history.push("/");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   const resetForm = () => {

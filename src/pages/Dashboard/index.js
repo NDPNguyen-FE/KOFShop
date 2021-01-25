@@ -15,7 +15,6 @@ const Dashboard = (props) => {
 
   useEffect(() => {
     dispatch(getUserOrderHistory(currentUser.id));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

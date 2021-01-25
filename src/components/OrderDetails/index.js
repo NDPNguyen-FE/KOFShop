@@ -53,7 +53,6 @@ const OrderDetails = ({ order }) => {
     return () => {
       dispatch(setOrderDetails({}));
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

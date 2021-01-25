@@ -28,7 +28,6 @@ const EmailPassword = (props) => {
       dispatch(resetUserState());
       history.push("/login");
     }
-    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resetPasswordSuccess]);
 
   useEffect(() => {

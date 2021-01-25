@@ -50,7 +50,6 @@ const PaymentDetails = () => {
     if (itemCount < 1) {
       history.push("/dashboard");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemCount]);
 
   const handleShipping = (evt) => {

@@ -31,7 +31,6 @@ const Admin = (props) => {
 
   useEffect(() => {
     dispatch(fetchProductsStart());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggleModal = () => setHideModal(!hideModal);
